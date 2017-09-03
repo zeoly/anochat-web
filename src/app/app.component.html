@@ -21,5 +21,7 @@
       <md-header-cell *mdHeaderCellDef>描述</md-header-cell>
       <md-cell *mdCellDef="let role"> {{role.desc}} </md-cell>
     </ng-container>
+    <md-header-row *mdHeaderRowDef="displayedColumns"></md-header-row>
+    <md-row *mdRowDef="let row; columns: displayedColumns;"></md-row>
   </md-table>
 </div>

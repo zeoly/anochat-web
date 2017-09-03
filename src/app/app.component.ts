@@ -14,6 +14,7 @@ export class AppComponent {
 
   items = [{}, {}, {}];
 
+  displayedColumns = ['name', 'desc'];
   dataSource = new ExampleDataSource();
 }
 
